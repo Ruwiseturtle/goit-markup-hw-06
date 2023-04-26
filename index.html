@@ -355,7 +355,7 @@
       </section>
     </main>
 
-     <!-- подвал -->
+    <!-- подвал -->
     <footer class="section-footer">
       <div class="container container-footer">
         <div class="container-logo">
@@ -405,7 +405,7 @@
           <label class="text-subscribe label" for="subscribe">Subscribe</label>
 
           <div class="subscribe">
-            <input 
+            <input
               class="input-subscribe"
               type="email"
               name="email"
@@ -433,8 +433,9 @@
         </button>
 
         <!-- форма модального вікна -->
-        <p class="title-modal">Leave your contacts and we will call you back</p>
-
+        <div class="title-modal">
+          <strong >Leave your contacts and we will call you back</strong>
+        </div>
         <form action="">
           <!-- для ввода інформації -->
           <label class="block-label">
@@ -469,27 +470,35 @@
 
           <!-- для коментарів -->
           <label class="block-label">
-             <span class="text-label">Comment</span>
-            <textarea class="textarea-form" name="comment" rows="5" placeholder="Text input"></textarea>
+            <span class="text-label">Comment</span>
+            <textarea
+              class="textarea-form"
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
           </label>
 
           <!--чек-бокс -->
           <label class="check-form">
-            <input class="checkbox" type="checkbox" name="accept" value="accept">
-            <span class="icon-check">
-            </span>
-            <span class="text-policy">I accept the terms and conditions of the
-               <a href="" class="policy-href">Privacy Policy</a>
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="accept"
+              value="accept"
+            />
+            <span class="icon-check"> </span>
+            <span class="text-policy"
+              >I accept the terms and conditions of the
+              <a href="" class="policy-href">Privacy Policy</a>
             </span>
           </label>
-  
+
           <!-- кнопка отправить -->
           <button class="button-index" type="submit">Send</button>
-
         </form>
       </div>
     </div>
-     
 
     <script src="./js/modal.js"></script>
   </body>

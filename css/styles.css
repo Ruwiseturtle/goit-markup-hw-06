@@ -369,7 +369,12 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
     width: 408px;
     min-height: 584px;
-    padding: 24px;
+
+    padding-top: 72px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 24px;
+
     left: 50%;
     top: 50%;
     background-color:  var(--color-modal);
@@ -382,10 +387,9 @@ h1, h2, h3, h4, h5, h6, p, ul{
 }
 
 .button-modal-close{
-    display: block;
-    
-    margin-left: auto;
-    margin-bottom: 24px;
+    position:absolute;
+    top:24px;
+    right:24px;
 
     border-radius: 50%;
     background-color: var(--btn-background-color);
@@ -426,7 +430,7 @@ h1, h2, h3, h4, h5, h6, p, ul{
 .block-label{
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 
@@ -452,6 +456,8 @@ h1, h2, h3, h4, h5, h6, p, ul{
     position: absolute;
     top: 8px;
     left: 16px;
+
+    fill: var(--second-text-color);
 }
 
 .modal-input{
@@ -471,7 +477,8 @@ h1, h2, h3, h4, h5, h6, p, ul{
     border: 1px solid var(--accent-color);
 }
 
-.modal-input:hover + .icon-form{
+.modal-input:hover + .icon-form,
+.modal-input:focus+.icon-form{
     fill: var(--accent-color);
 }
 
@@ -524,6 +531,12 @@ h1, h2, h3, h4, h5, h6, p, ul{
 
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;   
+}
+
+.checkbox:focus + .icon-check,
+.checkbox:hover + .icon-check,
+.checkbox:active + .icon-check{
+    border-color: var(--accent-color);
 }
 
 .checkbox:checked + .icon-check {
